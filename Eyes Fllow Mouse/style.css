@@ -12,6 +12,7 @@ body {
     place-items: center;
     min-height: 100vh;
     background: #0684c8;
+    cursor: url('coronavirus.png'), pointer;
 }
 
 .container {
@@ -19,6 +20,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
 .container .face {
