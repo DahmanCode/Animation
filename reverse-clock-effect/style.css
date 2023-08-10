@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'REM', sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+  padding: 2rem 6rem;
+  background-color: #023f5c;
+  overflow: hidden;
+  z-index: 999;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: -75%;
+  left: -50vw;
+  transform: translateY(50%);
+  height: 250dvh;
+  width: 200dvw;
+  background: conic-gradient(#023f5c, #91d7f8);
+  animation: rotate 4s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #91d7f8;
+  padding: 15px;
+  width: 200px;
+  font-size: 1rem;
+  /* font-weight: 600; */
+  border-radius: 6px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #000;
+  transition: all .2s ease;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #023f5c;
+}
+
+button:active  {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+header {
+  position: relative;
+  width: 100%;
+  /* padding-bottom: 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* z-index: 999; */
+  /* overflow: hidden; */
+}
+
+header h1 {
+  color: #91d7f8;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  margin: 0 20px;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  /* padding-left: 3rem; */
+  /* background-color: #91d7f8; */
+  overflow: hidden;
+}
+
+main .container {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container h1 {
+  color: black;
+  font-size: 6.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.container h1 span {
+  color: #91d7f8;
+}
+
+.container p {
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.container button {
+  margin-bottom: 4rem;
+}
+
+.container .details {
+  display: flex;
+  gap: 8rem;
+}
+
+.details div {
+  display: flex;
+  position: relative;
+  color: #91d7f8;
+}
+
+.details div h2 {
+  font-size: 2.5rem;
+}
+
+.details div div {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: -3.5rem;
+  transform: translateY(-50%);
+}
+
+.details div span {
+  font-size: .8rem;
+}
