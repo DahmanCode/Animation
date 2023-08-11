@@ -72,7 +72,7 @@ button {
   display: block;
   text-align: center;
   cursor: pointer;
-  box-shadow: 4px 4px 0 #023f5c;
+  box-shadow: 4px 4px 0 #000;
   transition: all .2s ease;
 }
 
@@ -184,7 +184,7 @@ main .container {
     padding: 10px;
     width: 160px;
     font-size: .9rem;
-    box-shadow: 3px 3px 0 #023f5c;
+    box-shadow: 3px 3px 0 #000;
   }
 
   header h1 {
